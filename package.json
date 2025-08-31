@@ -1,0 +1,64 @@
+{
+  "name": "finquest",
+  "version": "1.0.0",
+  "description": "AI-powered gamified personal finance learning platform",
+  "private": true,
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
+  "scripts": {
+    "install:all": "npm install && npm run install:frontend && npm run install:backend",
+    "install:frontend": "cd frontend && npm install",
+    "install:backend": "cd backend && npm install",
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev:frontend": "cd frontend && npm run dev",
+    "dev:backend": "cd backend && npm run start:dev",
+    "build": "npm run build:backend && npm run build:frontend",
+    "build:frontend": "cd frontend && npm run build",
+    "build:backend": "cd backend && npm run build",
+    "start": "concurrently \"npm run start:backend\" \"npm run start:frontend\"",
+    "start:frontend": "cd frontend && npm start",
+    "start:backend": "cd backend && npm run start:prod",
+    "test": "npm run test:backend && npm run test:frontend",
+    "test:frontend": "cd frontend && npm test",
+    "test:backend": "cd backend && npm test",
+    "lint": "npm run lint:frontend && npm run lint:backend",
+    "lint:frontend": "cd frontend && npm run lint",
+    "lint:backend": "cd backend && npm run lint",
+    "clean": "npm run clean:frontend && npm run clean:backend",
+    "clean:frontend": "cd frontend && rm -rf .next node_modules",
+    "clean:backend": "cd backend && rm -rf dist node_modules",
+    "db:reset": "cd database && npm run reset",
+    "db:seed": "cd database && npm run seed",
+    "deploy": "npm run build && npm run deploy:production",
+    "deploy:production": "echo 'Deploy to production server'",
+    "health": "npm run health:backend && npm run health:frontend",
+    "health:backend": "curl -f http://localhost:3001/api/v1/ai/health || exit 1",
+    "health:frontend": "curl -f http://localhost:3000 || exit 1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "concurrently": "^8.2.2",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.12"
+  },
+  "keywords": [
+    "education",
+    "fintech",
+    "gamification",
+    "ai",
+    "adaptive-learning",
+    "financial-literacy"
+  ],
+  "author": "FinQuest Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-org/finquest.git"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  }
+}

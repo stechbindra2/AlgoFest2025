@@ -1,0 +1,238 @@
+# FinQuest - Comprehensive .gitignore for AlgoFest 2025 Competition
+
+# Environment Variables & Secrets
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.example
+*.env
+
+# API Keys & Secrets
+secrets/
+*.key
+*.pem
+config/secrets.json
+azure-config.json
+
+# Node.js Dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Next.js Build Outputs
+.next/
+out/
+build/
+dist/
+.vercel/
+
+# React & Frontend
+.react/
+public/uploads/
+static/uploads/
+
+# NestJS & Backend
+dist/
+coverage/
+*.tsbuildinfo
+.nyc_output/
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+db/
+database/backups/
+dumps/
+*.sql.backup
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# Runtime & Cache
+.cache/
+.parcel-cache/
+.npm/
+.eslintcache
+.stylelintcache
+*.tgz
+*.tar.gz
+
+# IDE & Editor Files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Operating System
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# Testing
+coverage/
+*.lcov
+.jest/
+test-results/
+playwright-report/
+test-report/
+
+# TypeScript
+*.tsbuildinfo
+.tscache/
+
+# ESLint & Prettier
+.eslintcache
+.prettierignore
+
+# Storybook
+storybook-static/
+.storybook/public/
+
+# Temporary Files
+tmp/
+temp/
+*.tmp
+*.temp
+
+# Uploads & User Content
+uploads/
+user-content/
+avatars/
+profile-pictures/
+
+# Deployment & Production
+.vercel/
+.netlify/
+.firebase/
+deployment/
+docker-compose.override.yml
+
+# AI & ML Models
+models/
+*.pkl
+*.joblib
+*.model
+ml-data/
+training-data/
+
+# Documentation Build
+docs/_site/
+docs/.jekyll-cache/
+docs/.jekyll-metadata
+site/
+
+# Backup Files
+*.backup
+*.bak
+*.orig
+
+# Competition Specific
+algofest-submission/
+demo-videos/
+presentation/
+*.pptx
+*.pdf
+
+# Local Development
+.local/
+dev-tools/
+scripts/local-*
+
+# Azure & Cloud
+.azure/
+azure-pipelines/
+.cloud/
+
+# Supabase
+.supabase/
+
+# Performance & Monitoring
+.lighthouse/
+bundle-analyzer/
+performance-reports/
+
+# Mobile Development (if added later)
+android/
+ios/
+.expo/
+.expo-shared/
+
+# Error Reports
+error-reports/
+crash-logs/
+
+# Competition Assets (keep in repo but ignore sensitive ones)
+# assets/                  # Keep design assets
+# public/                  # Keep public assets
+private-assets/
+internal-docs/
+team-notes/
+
+# Miscellaneous
+*.patch
+*.diff
+.hg/
+.svn/
+CVS/
+.bzr/
+
+# Large files that shouldn't be in git
+*.zip
+*.rar
+*.7z
+*.dmg
+*.iso
+*.img
+
+# AI Generated Content (temporary)
+ai-generated/
+temp-content/
+draft-questions/
+
+# Performance Benchmarks
+benchmarks/
+load-test-results/
+performance-logs/
+
+# Local Database
+local.db
+dev.db
+test.db
+
+# Certificate Files
+*.crt
+*.cert
+*.ca-bundle
+ssl/
+
+# Docker
+.dockerignore
+docker-compose.override.yml
+.docker/
+
+# Kubernetes
+k8s/secrets/
+*.kubeconfig
+
+# End of FinQuest .gitignore
