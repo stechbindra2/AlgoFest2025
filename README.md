@@ -357,13 +357,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **Open Source Community**: Amazing tools and libraries
 - **Students & Teachers**: Inspiration for better learning tools
 
-## 📞 Contact & Demo
-
-- **🌐 Live Demo**: [finquest.vercel.app](https://finquest.vercel.app)
-- **📧 Team Contact**: team@finquest.app
-- **📹 Demo Video**: [YouTube](https://youtube.com/watch?v=finquest-demo)
-- **📊 Algorithm Performance**: [Dashboard](https://finquest.app/analytics)
-
 ---
 
 **FinQuest** - Where AI meets education for the next generation of financially literate students! 🎯✨
